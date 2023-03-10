@@ -1,0 +1,15 @@
+{
+  "authorId": "org.earthstar-project",
+  "author": "The Earthstar Project",
+  "appletName": "Bookshelf",
+  "appletSlug": "bookshelf",
+  "version": "0.1.0",
+  "indexPath": "index.html",
+  "iconPath": "icon.png",
+  "contentSecurityPolicy": {
+    "default-src": ["self", "blob:"],
+    "connect-src": ["*"],
+    "img-src": ["data:", "blob:"],
+    "worker-src": ["blob:"]
+  }
+}

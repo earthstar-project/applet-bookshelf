@@ -1,0 +1,291 @@
+:root {
+	--auburn: rgb(148, 43, 37);
+	--english-violet: rgb(81, 53, 90);
+	--floral-white: rgb(255, 248, 240);
+	--olivier-violet: rgb(42, 12, 78);
+	--beige: rgb(249, 245, 233)
+}
+
+header {
+	background-color: var(--auburn);
+	padding: 0.5em 0;
+	color: white;
+}
+
+body {
+	font-family: 'ui-sans-serif';
+	background-color: var(--english-violet);
+	box-sizing: border-box;
+	margin: 0;
+}
+
+legend {
+	padding: 0.5em ;
+	color: rgb(255, 255, 255);
+	font-size: 0.7em;
+	background: var(--olivier-violet)
+	
+}
+
+fieldset {
+	border: none;
+	border-radius: 6px;
+	padding: 0.6em 0.75em;
+	background: white;
+}
+
+.app {
+	max-width: 37em;
+	margin: 0 auto 2em auto;
+	display: flex;
+	flex-direction: column;
+	gap: 1.5ch;
+}
+
+.listbox-button, .combobox-input {
+	font-size: 1em;
+	padding: 0.7em;
+	border-radius: 0.5em;
+	background: white;
+	border: none;
+	box-shadow: 1px 2px 2px rgba(0, 0, 0, 0.066);
+	width: 100%;
+}
+
+.combobox-input {
+	padding: 0.6em;
+	box-shadow: inset 1px 2px 2px rgba(0, 0, 0, 0.139);
+	width: calc(100% - 1.4em);
+	font-size: 0.9em;
+	border: 2px solid rgb(131, 165, 157)
+}
+
+.options-root {
+	position: relative;
+	width: 100%;
+}
+
+.listbox-options, .combobox-options {
+	position: absolute;
+	box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.1);
+	border-radius: 0.5em;
+	margin: 0.2em 0 0 0;
+	background: white;
+	width: calc(100%);
+	list-style: none;
+	padding: 0.2em 0;
+}
+
+.listbox-option {
+	height: 2.2em;
+	padding: 0 0.7em 0 0.7em;
+	margin: 0;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	color: rgb(42, 42, 42)
+}
+
+.option-root {
+	background: white;
+}
+
+.option-root:nth-child(even) {
+	background-color: rgb(250, 250, 250)
+} 
+
+.combobox-option {
+	height: 3em;
+	padding: 0 0.7em 0 0.7em;
+	margin: 0;
+	display: flex;
+	flex-direction: column;
+	
+	justify-content: center;
+	
+}
+
+.listbox-option-selected {
+	font-weight: bold;
+}
+
+.listbox-option-active {
+	color: var(--main);
+	background: var(--pale);
+}
+
+.selection-box {
+	display: flex;
+	align-items: baseline;
+	justify-content: space-between;
+
+}
+
+.selection-arrow {
+	color: rgb(181, 181, 181);
+	font-size: 0.8em;
+}
+
+.checkmark {
+	font-size: 1.1em;
+}
+
+header > details {
+	margin: auto;
+	max-width: 37em
+}
+
+header > details > summary {
+	display: flex;
+	align-items: baseline;
+	justify-content: space-between;
+}
+
+header > details > summary > h1 {
+	flex-grow: 1;
+	text-align: left;
+	font-weight: normal;
+	font-size: 1em;
+	margin: 0
+}
+
+.upload-form {
+	display: flex;
+	flex-direction: column;
+	gap: 1ch;
+}
+
+.upload-form.adding {
+	opacity: 0.5
+}
+
+.upload-form .controls {
+	display: flex;
+	justify-content: flex-end;
+	gap: 0.25ch;
+}
+
+
+
+.error-message {
+	background: rgb(255, 240, 240);
+	border: 1px solid rgb(183, 25, 25);
+	color: rgb(183, 25, 25);
+	padding: 0.8em;
+}
+
+
+
+
+button {
+	font-size: 12px;
+	padding: 0.4em 0.5em 0.4em 0.5em;
+	box-shadow: 1px 2px 2px rgba(0, 0, 0, 0.066);
+	border: 1px solid rgb(172, 188, 216);
+	background: white;
+	margin: 0;
+	border-radius: 6px;
+}
+
+button:disabled {
+	border: 1px solid whitesmoke;
+}
+
+
+.book-list {
+overflow: hidden;
+	background: var(--floral-white);
+	border-radius: 6px;
+	padding: 0;
+}
+
+.book-list legend {
+	margin: 0 0.75em
+}
+
+.book-list p {
+	font-size: 0.8em;
+	padding: 0 1.5ch;
+}
+
+.book-item {
+	display: flex;
+	gap: 1.5ch;
+	align-items: flex-end;
+	
+	padding: 1.5ch;
+
+}
+
+.book-item:nth-child(odd) {
+	background: var(--beige)
+}
+
+.book-item.new-book {
+	border: 2px solid var(--auburn);
+	background: var(--beige);
+	border-radius: 6px;
+}
+
+.book-cover-img {
+	width: 6em;
+	box-shadow: 2px 2px 5px rgba(0,0,0,0.25)
+}
+
+.book-title {
+	font-size: 1.2em;
+	font-weight: bold;
+}
+
+.book-shared-by {
+	color: gray
+}
+
+.book-item-controls {
+	display: flex;
+	gap: 0.5ch;
+	margin: 0.5em 0 0 0
+}
+
+.share-selection {
+	flex: 20ch 0 1;
+}
+
+.app-title {
+	pointer-events: none;
+}
+
+
+.syncing-servers, .not-syncing-servers {
+	color: var(--floral-white);
+	font-size: 0.8em;
+	background: var(--olivier-violet);
+	padding: 0.75em;
+	border-radius: 0 0 6px 6px;
+}
+
+.not-syncing-servers {
+	background: gray
+}
+
+.syncing-servers::before {
+	content: '';
+	border-radius: 100%;
+	width: 8px;
+	height: 8px;
+	margin: 0 0.5ch 0 0;
+	background: rgb(0, 216, 0);
+	display: inline-block;
+}
+
+.not-syncing-servers::before {
+ content: '';
+border-radius: 100%;
+width: 8px;
+height: 8px;
+margin: 0 0.5ch 0 0;
+background: white;
+display: inline-block;
+ 
+	display: inline-block;
+}

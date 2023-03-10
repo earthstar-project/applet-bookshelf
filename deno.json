@@ -1,0 +1,13 @@
+{
+  "importMap": "./import_map.json",
+  "compilerOptions": {
+    "lib": ["dom", "dom.iterable", "dom.asynciterable", "deno.ns"],
+    "jsx": "react-jsx",
+    "jsxImportSource": "preact"
+  },
+  "tasks": {
+    "bundle": "deno run -A scripts/build_applet.ts",
+    "bundle-watch": "deno run -A scripts/build_applet.ts --watch",
+    "serve": "deno run --allow-net --allow-read https://deno.land/std@0.159.0/http/file_server.ts --port 8080 applet/assets"
+  }
+}
